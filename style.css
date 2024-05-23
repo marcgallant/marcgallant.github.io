@@ -1,0 +1,89 @@
+body {  
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+#superboard {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    height: 50vw;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: repeat(3, auto)
+}
+
+.board {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: repeat(3, auto);
+    border: 2px solid black;
+    color: blue;
+}
+
+.board:nth-child(-n + 3) {
+    border-top: none;
+}
+
+.board:nth-child(3n + 1) {
+    border-left: none;
+}
+
+.board:nth-child(3n + 3) {
+    border-right: none;
+}
+
+.board:nth-child(n + 7) {
+    border-bottom: none;
+}
+
+.square {
+	width: 75px;
+	height: 75px;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+
+.square:nth-child(-n + 3) {
+    border-top: none;
+}
+
+.square:nth-child(3n + 1) {
+    border-left: none;
+}
+
+.square:nth-child(3n + 3) {
+    border-right: none;
+}
+
+.square:nth-child(n + 7) {
+    border-bottom: none;
+}
+
+#restartButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 150px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 40px;
+    font-size: 18px;
+}
+
+#restartButton:hover {
+    background-color: black;
+    color: #FFFFFF;
+}
